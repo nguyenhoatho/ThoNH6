@@ -1,0 +1,152 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+}
+
+.todo-list li:last-child {
+  border-bottom: 0;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-list li span {
+  flex: 1;
+  min-width: 0;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.todo-list li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.todo-list li button {
+  margin-left: 16px;
+  background-color: #dc3545;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.todo-list li button:hover {
+  background-color: #c82333;
+}
+
+.todo-edit-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li input[type="checkbox"]:first-child {
+  /* Select checkbox */
+}
+
+li input[type="checkbox"]:nth-child(2) {
+  /* Completed checkbox */
+}
+
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+li form {
+  flex: 1;
+}
+
+li form input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+li button {
+  margin-left: auto;
+  background-color: #dc3545;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
